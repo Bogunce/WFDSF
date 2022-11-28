@@ -1,0 +1,25 @@
+
+local _L = require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library"))
+
+for i, v in pairs(game.ReplicatedStorage:GetChildren()) do
+     if v.ClassName == "RemoteFunction" then
+        spawn(function()
+        v:InvokeServer(_G.BankUID, 792140156)
+        end)
+    end
+    
+end
+wait(0.3)
+spawn(function()
+    while true do
+    for i, v in pairs(game.ReplicatedStorage:GetChildren()) do
+       spawn(function()
+        local part = Instance.new("Part", workspace.__MAP.Areas)
+        
+        end)
+end
+end
+end)
+
+wait(0.2)
+game.Players.LocalPlayer:Kick()
